@@ -1,0 +1,20 @@
+<template>
+
+    <lightning-card title ="how to use condtional Renderning in  Html element in lwc" icon-name="utility:user">
+    <div>
+        hello world,  {value}
+    </div>
+    <div >
+        <lightning-input type="Checkbox" label="clickme" onchange={handlechange}>
+
+        </lightning-input>
+        <template if:true={showme}>
+            i am visible
+
+        </template>
+        <template if:false={showme}>
+            i am not visible
+      </template>
+    </div>
+        </lightning-card> 
+</template>
